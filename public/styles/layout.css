@@ -19,6 +19,9 @@ body {
   color: #244751;
   background-color: #eee;
   font-family: 'Roboto Condensed', sans-serif;
+  display: flex;
+  justify-content: center;
+
 }
 
 
@@ -27,10 +30,10 @@ body {
  */
 
 .container {
-  width: 450 px;
-  padding: 40 px;
+  width: 60em;
+  padding: 40px;
   background-color: white;
-}
+ }
 
 .tweet {
   border-style: solid;
@@ -38,6 +41,7 @@ body {
   border-color: darkgrey;
   margin: 2em;
   border-radius: 10px;
+  opacity: .8;
 }
 
 .tweet header {
@@ -46,6 +50,8 @@ body {
   align-items: center;
   display: flex;
   justify-content: flex-start;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 .tweet h2 {
@@ -75,15 +81,7 @@ body {
   justify-content: space-between;
 }
 
-.icon {
-  width: 40px;
-  height: 40px;
+.icons {
+  opacity: 0;
 }
 
-.icons a{
-  visibility:hidden;
-}
-
-.icons:hover a {
- visibility:visible;
-}

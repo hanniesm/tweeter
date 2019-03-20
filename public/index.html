@@ -17,6 +17,8 @@
 
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
@@ -35,7 +37,7 @@
     </nav>
 
     <!-- Page-specific (main) content here -->
-    <main class="container">
+    <main class="container" id="tweets-container">
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
         <form action="/tweets/" method="POST">
@@ -44,17 +46,17 @@
           <span class="counter">140</span>
         </form>
       </section>
-      <div class="tweets">
-        <article class="tweet">
+      <div class="tweets" id="tweets">
+<!--         <article class="tweet">
           <header>
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Atelopus_zeteki1.jpg/330px-Atelopus_zeteki1.jpg" class="tweet-logo">
             <h2>Froggy McFrog Face</h2>
-            <p>@hoppit</h6>
+            <p>@hoppit</p>
           </header>
-          <p>Ribbit</p>
-          <footer>10 days ago
-            <div class="icons"><img src="http://www.flagz.co.nz/wp-content/uploads/2013/08/nz-flag.jpg" class="icon" id="flag"><img src="http://www.myiconfinder.com/uploads/iconsets/256-256-60eade7f184e696a79fa2ff1e81c851d.png" class="icon" id="refresh"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Blue_heart.png" class="icon" id="heart"></div></footer>
-        </article>
+          <div class="body"><p>Ribbit</p></div>
+          <footer><div class="postDate">10 days ago</div>
+            <div class="icons"><i class="far fa-flag" id="flag"></i><i class="fas fa-retweet" id="retweet"></i><i class="far fa-heart" id="heart"></i></div></footer>
+        </article> -->
       </div>
 
     </main>
