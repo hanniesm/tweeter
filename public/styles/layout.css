@@ -28,5 +28,62 @@ body {
 
 .container {
   width: 450 px;
+  padding: 40 px;
   background-color: white;
+}
+
+.tweet {
+  border-style: solid;
+  border-width: 1px;
+  border-color: darkgrey;
+  margin: 2em;
+  border-radius: 10px;
+}
+
+.tweet header {
+  padding: 0.5em;
+  background-color: #F0F0F0;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.tweet h2 {
+  padding: 0.5em;
+}
+
+.tweet header p {
+  font-size: 1em;
+  color: grey;
+}
+
+.tweet-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+}
+
+.tweet p {
+  padding: 1em;
+  font-size: 2em;
+}
+
+.tweet footer {
+  padding: 1em;
+  border-top: solid 1px darkgrey;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.icons a{
+  visibility:hidden;
+}
+
+.icons:hover a {
+ visibility:visible;
 }
