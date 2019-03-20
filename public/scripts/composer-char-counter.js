@@ -26,8 +26,12 @@ $(document).ready(function(){
 
     if(count < 0) {
       $(".counter").css("color", "red");
+      $("#submit").prop('disabled', true)
+      alert("your tweet is too long")
+
     } else {
       $(".counter").css("color", "black")
+      $("#submit").prop('disabled', false)
     }
   })
 })
