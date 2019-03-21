@@ -1,6 +1,5 @@
-
+//This function takes the created tweets and adds them to the tweet section so they will appear on the page
 function renderTweets(tweets) {
-  // loops through tweets
   $('#tweets').empty();
   for (const tweetObj of tweets) {
     const $tweet = createTweetElement(tweetObj);
@@ -8,6 +7,7 @@ function renderTweets(tweets) {
   }
 };
 
+//this function creates the tweet element in 3 parts, the header, body and footer
 function createTweetElement(tweet) {
   let $tweet = $('<article>').addClass('tweet');
 
@@ -108,7 +108,7 @@ const loadTweets = () => {
 
 loadTweets();
 
-//Need to make it clear the form on refresh
+// This posts a new tweet and loads the tweets with the new one.
 $(document).ready(function(){
   $("#newTweet").on("submit", function() {
     event.preventDefault();
@@ -127,6 +127,13 @@ $(document).ready(function(){
     })
   })
 })
+
+// This clears the form after the form is submitted
+$(document).ready(function(){
+  $( "#newTweet" ).on("submit", function() {
+    (this).reset();
+  });
+});
 
 // Also need to add to this that the textarea is enabled
 $(document).ready(function(){

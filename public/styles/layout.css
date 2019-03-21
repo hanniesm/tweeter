@@ -10,10 +10,6 @@ html {
   box-sizing: inherit;
 }
 
-/*
- * Global layout stuff
- */
-
 body {
   margin: 81px;
   color: #244751;
@@ -23,11 +19,6 @@ body {
   justify-content: center;
 
 }
-
-
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
 
 .container {
   width: 60em;
@@ -59,13 +50,19 @@ body {
 
 .tweet header p {
   font-size: 1em;
+  margin: 0;
   color: grey;
 }
 
 .leftDiv {
   padding: 0.5em;
-  width: 200px;
+  align-self: normal;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: center;
+  display: flex;
 }
+
 
 /*.rightDiv {
   justify-content: flex-end;
