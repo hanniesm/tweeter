@@ -46,6 +46,10 @@
   display: flex;
 }
 
+#nav-bar #composeIcon {
+  padding-right: 1em;
+}
+
 .select {
     background-color: #F9FEFE;
 }

@@ -13,18 +13,25 @@ function createTweetElement(tweet) {
 
   let $header = $('<header>')
 
+  let $leftDiv = $('<div>').addClass('leftDiv')
 
   $('<img>')
     .attr('src', tweet.user.avatars.small)
-    .appendTo($header);
+    .appendTo($leftDiv);
 
   $('<h2>')
     .text(tweet.user.name)
-    .appendTo($header);
+    .appendTo($leftDiv);
+
+  $leftDiv.appendTo($header)
+
+  let $rightDiv = $('<div>').addClass('rightDiv')
 
   $('<p>')
     .text(tweet.user.handle)
-    .appendTo($header);
+    .appendTo($rightDiv);
+
+  $rightDiv.appendTo($header)
 
   $header.appendTo($tweet);
 

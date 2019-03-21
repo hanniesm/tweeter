@@ -47,9 +47,8 @@ body {
 .tweet header {
   padding: 0.5em;
   background-color: #F0F0F0;
-  align-items: center;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
@@ -62,6 +61,15 @@ body {
   font-size: 1em;
   color: grey;
 }
+
+.leftDiv {
+  padding: 0.5em;
+  width: 200px;
+}
+
+/*.rightDiv {
+  justify-content: flex-end;
+}*/
 
 .tweet-logo {
   width: 80px;
