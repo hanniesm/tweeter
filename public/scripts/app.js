@@ -101,6 +101,7 @@ const loadTweets = () => {
 
 loadTweets();
 
+//Need to make it clear the form on refresh
 $(document).ready(function(){
   $("#newTweet").on("submit", function() {
     event.preventDefault();
@@ -115,15 +116,15 @@ $(document).ready(function(){
     }
 
     request(requestOptions, function(response) {
-      console.log(response)
       loadTweets();
     })
   })
 })
 
+// Also need to add to this that the textarea is enabled
 $(document).ready(function(){
   $( "#compose" ).on("click", function() {
-    $( "section" ).toggle("slow");
+    $( ".new-tweet" ).toggle("slow");
     $(this).toggleClass('highlight')
   });
 });

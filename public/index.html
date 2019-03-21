@@ -48,14 +48,15 @@
     <main class="container" id="tweets-container">
       <section class="new-tweet" style="display:none">
         <h2>Compose Tweet</h2>
+        <div id="validationErrors"></div>
         <form action="/tweets/" method="POST" id="newTweet">
           <textarea name="text" id="text" placeholder="What are you humming about?"></textarea>
           <input type="submit" value="Tweet" id="submit" disabled='disabled'>
           <span class="counter">140</span>
         </form>
       </section>
-      <div class="tweets" id="tweets">
-      </div>
+      <section class="tweets" id="tweets">
+      </section>
 
     </main>
 

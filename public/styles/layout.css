@@ -85,3 +85,9 @@ body {
   opacity: 0;
 }
 
+#validationErrors {
+  background-color: pink;
+  color: red;
+  margin-bottom: 1em;
+}
+
