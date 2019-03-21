@@ -1,9 +1,10 @@
 
 function renderTweets(tweets) {
   // loops through tweets
+  $('#tweets').empty();
   for (const tweetObj of tweets) {
     const $tweet = createTweetElement(tweetObj);
-    $('#tweets').append(createTweetElement(tweetObj));
+    $('#tweets').prepend(createTweetElement(tweetObj));
   }
 };
 
