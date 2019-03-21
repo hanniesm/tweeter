@@ -5,7 +5,7 @@
   width: 100%;
   background-color: #00a087;
   color: #e8fdff;
-  height: 80px;
+  height: 100px;
   padding-right: 2em;
   padding-left: 2em;
   display: flex;
@@ -17,6 +17,7 @@
 #nav-bar .logo {
   width: 80px;
   height: 80px;
+  float: left;
 }
 
 #nav-bar .header {
@@ -27,7 +28,7 @@
 
 #nav-bar .left-align {
   align-items: center;
-  justify-content: left;
+  float: left;
 }
 
 #nav-bar .right-align {
@@ -35,12 +36,19 @@
 }
 
 #nav-bar #compose {
-  background-color: #E5E4E2;
-  border-color: black 2px;
+  /*background-color: #F9FEFE;*/
+  border: solid black 2px;
   color: #3EA99F;
+  height: 80px;
   padding: 15px 32px;
   font-size: 20px;
-  border-radius: 10px;
+  border-radius: 8px;
   display: flex;
 }
 
+.select {
+    background-color: #F9FEFE;
+}
+.select.highlight {
+    background-color: #CBF0E5;
+}

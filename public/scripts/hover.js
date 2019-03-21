@@ -9,12 +9,12 @@ $(document).ready(function(){
   })
 });
 
-$(document).ready(function(){
-  $("#compose").hover(function(){
-    $(this).css({"background-color": "#B6E9F0"});
-    }, function(){
-    $(this).css({"background-color": "#E5E4E2"});
-  })
-});
+// $(document).ready(function(){
+//   $("#compose").hover(function(){
+//     $(this).css({"background-color": "#B6E9F0"});
+//     }, function(){
+//     $(this).css({"background-color": "#F9FEFE"});
+//   })
+// });
 // Target icons. JQuery method to go from parent to child. Look for find.
 
