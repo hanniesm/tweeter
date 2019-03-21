@@ -10,6 +10,7 @@
   padding-left: 2em;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   z-index: 10;
 }
 
@@ -23,3 +24,23 @@
   line-height: 2em;
   margin-left: 0.5em;
 }
+
+#nav-bar .left-align {
+  align-items: center;
+  justify-content: left;
+}
+
+#nav-bar .right-align {
+  justify-content: right;
+}
+
+#nav-bar #compose {
+  background-color: #E5E4E2;
+  border-color: black 2px;
+  color: #3EA99F;
+  padding: 15px 32px;
+  font-size: 20px;
+  border-radius: 10px;
+  display: flex;
+}
+

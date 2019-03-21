@@ -119,3 +119,24 @@ $(document).ready(function(){
     })
   })
 })
+
+$(document).ready(function(){
+  $( "button" ).on("click", function() {
+    $( "section" ).toggle("slow");
+  });
+});
+
+
+
+
+jQuery('.button').click(function() {
+    open = !open;
+
+    if(open) {
+        jQuery('.div1').animate({width: '100%'});
+        jQuery('.div2').animate({width: '100%'});
+    } else {
+        jQuery('.div1').animate({width: '0%'});
+        jQuery('.div2').animate({width: '50%'}); // Or whatever else you want to lower it to
+    }
+});
