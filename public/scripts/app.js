@@ -44,7 +44,7 @@ function createTweetElement(tweet) {
 
   $("<div>")
     .addClass("postDate")
-    .text(tweet.created_at)
+    .text(moment(tweet.created_at).fromNow())
     .appendTo($footer);
 
   const $icons = $("<div>").addClass("icons");
