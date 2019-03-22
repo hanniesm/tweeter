@@ -26,15 +26,6 @@
   margin-left: 0.5em;
 }
 
-#nav-bar .left-align {
-  align-items: center;
-  float: left;
-}
-
-#nav-bar .right-align {
-  justify-content: right;
-}
-
 #nav-bar #compose {
   border: solid black 2px;
   color: #3EA99F;

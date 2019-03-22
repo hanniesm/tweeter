@@ -57,17 +57,9 @@ body {
 
 .leftDiv {
   padding: 0.5em;
-  align-self: normal;
-  justify-content: space-between;
-  align-content: flex-start;
   align-items: center;
   display: flex;
 }
-
-
-/*.rightDiv {
-  justify-content: flex-end;
-}*/
 
 .tweet-logo {
   width: 80px;
