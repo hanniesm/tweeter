@@ -46,6 +46,7 @@ body {
 
 .tweet h2 {
   padding: 0.5em;
+  margin: 0;
 }
 
 .tweet header p {
