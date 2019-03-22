@@ -17,3 +17,7 @@ Tweeter is a simple, single-page Twitter clone. The page loads tweets from Mongo
 - Chance
 - MongoDb
 - Body-parser
+
+## Screenshots
+!["Screenshot of compose tweet"](https://raw.githubusercontent.com/hanniesm/tweeter/master/docs/compose%20tweet.png)
+!["Screenshot of tweets"](https://raw.githubusercontent.com/hanniesm/tweeter/master/docs/tweets.png)
